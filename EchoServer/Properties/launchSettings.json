@@ -1,0 +1,48 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/EchoServer",
+      "sslPort": 0
+    },
+    "iisExpress": {
+      "applicationUrl": "http://localhost:54266",
+      "sslPort": 44317
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_VSLOCAL": "localIIExpress_core2",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_VS": "vsIIExpress_core2"
+      }
+    },
+    "EchoServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_VSLOCAL": "localKestrel_core2",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_VS": "vsKestrel_core2"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "LocalIIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost/EchoServer",
+      "environmentVariables": {
+        "ASPNETCORE_VSLOCAL": "localIIS_core2",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_VS": "vsIIS_core2"
+      }
+    }
+  }
+}
